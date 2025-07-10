@@ -1,22 +1,121 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
 body {
     /* 
       Usando a propriedade 'background' como um atalho.
       Isso combina cor, imagem, repetição, anexo (fixed) e posição (center).
       É mais limpo e segue as melhores práticas.
     */
-    background: #121220 url("./assets/bg.jpg") no-repeat center center fixed;
+  background: #121220 url("./assets/bg.jpg") no-repeat center center fixed;
 
     /* 
       'background-size' é mantido separado para clareza e porque 'cover'
       não pode ser combinado com os outros valores no atalho principal.
     */
-    background-size: cover;
+  background-size: cover;
+  color: white;
 }
 
-h2 {
-    color: aliceblue;
+body *, :root {
+  font-family: "Inter";
+  line-height: 160%;
 }
 
-p {
-    color: aliceblue;
+header {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+header img {
+  margin-top: 10rem;  
+  width: 15rem;
+}
+
+main {
+  max-width: 36rem;
+  width: 90%;
+  margin: 3rem auto;
+}
+
+section {
+  background-image: linear-gradient(90deg, #9572fc 0%, #43e7ad 50%, #e2d45c 100%);
+  border-radius: 0.625rem;
+  padding-top: 4px;
+}
+
+section > div {
+  padding: 2rem;
+  padding-top: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #2a2634;
+}
+
+section h2 {
+  letter-spacing: -0.47px;
+}
+
+section p {
+  letter-spacing: -0.18px;
+  color: #a1a1aa;
+}
+
+/* Animações */
+main section {
+  opacity: 1;
+  transform: translateY(2rem);
+
+  animation-name: appear;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  100%{
+    opacity: 1;
+    transform: translateY(0);;
+  }
+}
+
+form {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  margin: 1.25rem 0;
+}
+
+input, select{
+  all: unset;
+  border: 2px solid #9147ff;
+  border-radius: 0.5rem;
+  padding: 0.675rem;
+  font-size: 0.875rem;
+  background-color: #00000066;
+}
+
+input {
+  flex: 1;
+}
+
+button {
+  border: 0;
+  background-image: linear-gradient(210deg, #9572fc 0%, #43e7ad 50%, #e2d45c 100%);
+  border-radius: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.12px;
+  padding: 0.8rem; /* Adicionado um padding para melhorar a aparência */
+  
+  /* Corrigido: A transição precisa de uma unidade de tempo (ex: 0.3s) */
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  /* Corrigido: Sintaxe inválida de transform e box-shadow */
+  transform: translateY(-3px);
+  box-shadow: 0 5px 1rem rgba(50, 212, 123, 0.2);
 }

@@ -52,3 +52,12 @@
     - Declaração
     - Seletores
     - Propriedade e valor
+
+# JS
+    - Linguagem de programação
+    - Browsers
+    - Input -> Process -> Output
+    - Váriaveis
+    - Function
+    - Estrutura de dados
+    - Algoritmo

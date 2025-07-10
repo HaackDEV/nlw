@@ -1,0 +1,22 @@
+body {
+    /* 
+      Usando a propriedade 'background' como um atalho.
+      Isso combina cor, imagem, repetição, anexo (fixed) e posição (center).
+      É mais limpo e segue as melhores práticas.
+    */
+    background: #121220 url("./assets/bg.jpg") no-repeat center center fixed;
+
+    /* 
+      'background-size' é mantido separado para clareza e porque 'cover'
+      não pode ser combinado com os outros valores no atalho principal.
+    */
+    background-size: cover;
+}
+
+h2 {
+    color: aliceblue;
+}
+
+p {
+    color: aliceblue;
+}

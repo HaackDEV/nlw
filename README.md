@@ -23,6 +23,12 @@ A aplicação funciona como um assistente especializado para jogadores, fornecen
 
 ---
 
+## 🌐 Demonstração ao Vivo
+
+Você pode acessar e testar a aplicação aqui: [**NLW Expert - Assistente de Jogos**](https://haackdev.github.io/nlw/)
+
+---
+
 ## ✨ Funcionalidades
 
 - **Seleção de Jogo:** Escolha entre League of Legends, Valorant e CS2 para obter respostas contextuais.
@@ -44,7 +50,7 @@ A aplicação funciona como um assistente especializado para jogadores, fornecen
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/HaackDEV/nlw
    ```
 
 2. **Navegue até o diretório do projeto:**

@@ -10,7 +10,7 @@ body {
       Isso combina cor, imagem, repetição, anexo (fixed) e posição (center).
       É mais limpo e segue as melhores práticas.
     */
-  background: #121220 url("./assets/bg.jpg") no-repeat center center fixed;
+  background: #20203a url("./assets/bg.jpg") no-repeat center center fixed;
 
     /* 
       'background-size' é mantido separado para clareza e porque 'cover'

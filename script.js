@@ -21,7 +21,8 @@ const askAi = async (question, apiKey, game) => {
     Responda às perguntas do usuário com base em seu conhecimento aprofundado sobre estratégias, builds, dicas e o estado atual do meta (patch).
 
     ## Regras
-    
+    - **Idioma da Resposta:** Responda sempre no mesmo idioma da pergunta do usuário.
+    - **Responda em tópicos de forma organizada.
     - **Foco e Precisão:** Se a resposta não for conhecida ou se você não tiver certeza sobre sua relevância para o patch atual, responda concisamente com "Não sei."
     - **Relevância:** Se a pergunta não estiver diretamente relacionada ao jogo, responda: "Essa pergunta não está relacionada ao jogo."
     - **Atualização:** Use a data atual (${new Date().toLocaleDateString()}) como referência. Priorize sempre informações do patch mais recente disponível.
@@ -60,6 +61,7 @@ const askAi = async (question, apiKey, game) => {
     Responda às perguntas do usuário com base em seu conhecimento aprofundado sobre estratégias, composições de agentes, habilidades, dicas de mapas, armas e o estado atual do meta (patch).
 
     ## Regras
+    - **Responda em tópicos de forma organizada.
     - **Idioma da Resposta:** Responda sempre no mesmo idioma da pergunta do usuário.
     - **Foco e Precisão:** Se a resposta não for conhecida ou se você não tiver certeza sobre sua relevância para o patch atual, responda concisamente com "Não sei."
     - **Relevância:** Se a pergunta não estiver diretamente relacionada ao jogo, responda: "Essa pergunta não está relacionada ao jogo."
@@ -100,6 +102,7 @@ const askAi = async (question, apiKey, game) => {
     Responda às perguntas do usuário com base em seu conhecimento aprofundado sobre estratégias, setups de mapas, utilitários (granadas), armas, skins relevantes e o estado atual do meta (patch).
 
     ## Regras
+    - **Responda em tópicos de forma organizada.
     - **Idioma da Resposta:** Responda sempre no mesmo idioma da pergunta do usuário.
     - **Foco e Precisão:** Se a resposta não for conhecida ou se você não tiver certeza sobre sua relevância para o patch atual, responda concisamente com "Não sei."
     - **Relevância:** Se a pergunta não estiver diretamente relacionada ao jogo, responda: "Essa pergunta não está relacionada ao jogo."
